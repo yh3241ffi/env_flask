@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
 
 # モジュールのインストール
-WORKDIR /tmp/WORKDIR
+WORKDIR /tmp/work
 COPY requirements.txt ${PWD}
 RUN pip install -r requirements.txt
 
